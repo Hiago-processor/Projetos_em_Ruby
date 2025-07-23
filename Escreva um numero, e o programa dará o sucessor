@@ -1,0 +1,5 @@
+puts("Digite um numero para que vc saiba o sucessor dele")
+numero = gets.chomp.to_i
+sucessor = numero + 1
+
+puts("O seu numero sucessor é #{sucessor}")
