@@ -1,18 +1,13 @@
-puts("Qual o seu nome?")
+puts "qual é seu nome?"
 nome = gets.chomp
-puts("Seu nome é #{nome}")
+puts "Legal, seu nome é #{nome}"
+puts "Qual a sua idade?"
+idade = gets.chomp.to_i
+puts "Sua idade é #{idade}"
 
-puts("E qual é a sua idade")
+    if idade <= 18
+       valor = idade + 5
+ puts "Sua idade mais 5 é igual a: #{valor} " 
 
-idade = gets.chomp
-
-if idade == "18"
-    puts("Voce é de maior #{nome}!")
-    
-elsif idade == "12"
-    puts("Você é adolecente #{nome}!")
-    
-else 
-    puts("Voce é muito criança ainda #{nome}!")
-
-end
+else
+    puts
