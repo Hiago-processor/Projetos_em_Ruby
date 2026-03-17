@@ -1,0 +1,8 @@
+listac = []
+puts "Bem-vindo ao carrinho de compras!"
+sleep(2)
+puts
+puts "O que você quer pegar primeiro?"
+c = gets.to_s
+listac << c
+puts "Mostrar lista? 1- Sim|2-Não"
