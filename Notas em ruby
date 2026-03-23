@@ -1,0 +1,36 @@
+notas = []
+
+loop do
+  puts "\nBem-vindo ao sistema de notas"
+  puts "1 - Criar nota"
+  puts "2 - Deletar nota"
+  puts "3 - Visualizar notas"
+  puts "4 - Sair"
+
+  usu = gets.to_i
+
+  if usu == 1
+    puts "Escreva sua nota:"
+    escreva = gets.chomp
+    notas << escreva
+    puts "Nota salva!"
+
+  elsif usu == 2
+    puts "Índice da nota para deletar:"
+    indice = gets.to_i
+    notas.delete_at(indice)
+    puts "Nota deletada!"
+
+  elsif usu == 3
+    if notas.empty?
+      puts "Nenhuma nota ainda."
+    else
+      notas.each_with_index do |nota, i|
+        puts "#{i}: #{nota}"
+      end
+    end
+
+  elsif usu == 4
+    break
+  end
+end
